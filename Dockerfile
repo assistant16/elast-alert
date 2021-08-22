@@ -51,4 +51,4 @@ VOLUME $CONFIG_DIRECTORY
 # switch to elastalert
 USER 1000
 
-ENTRYPOINT ["/opt/app-root/src/run.sh"]
+ENTRYPOINT ["/opt/elastalert/run.sh"]
