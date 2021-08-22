@@ -18,7 +18,7 @@ RUN INSTALL_PKGS="python-devel python-setuptools net-tools" && \
 
 RUN cd $HOME
 
-COPY elastalert-0.1.29.tar.gz /elastalert-0.1.29.tar.gz
+COPY elastalert-0.2.4.tar.gz /elastalert-0.2.4.tar.gz
 
 RUN tar xvf /elastalert-0.1.29.tar.gz
 
