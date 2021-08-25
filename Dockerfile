@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN  pip install --upgrade setuptools && \
-     pip install --upgrade pip
+RUN  pip3 install --upgrade setuptools && \
+     pip3 install --upgrade pip
      pip install elastalert && \
 
 MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
