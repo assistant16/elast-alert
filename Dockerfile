@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhscl/python-36-rhel7
+FROM hub.docker.com/centos/python-36-centos7
 
 RUN  . /opt/app-root/etc/scl_enable && \
     pip install --upgrade pip && \
