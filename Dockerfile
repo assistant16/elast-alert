@@ -1,7 +1,8 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN  pip2 install --upgrade setuptools && \
-     pip2 install --upgrade pip
+RUN  apt-get install python3.6-dev libmysqlclient-dev && \
+     pip install --upgrade setuptools && \
+     pip install --upgrade pip
      pip install elastalert && \
 
 MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
