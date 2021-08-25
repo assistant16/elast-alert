@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN  apt-get install python3.6-dev libmysqlclient-dev && \
+RUN  pip install neuralpy && \
      pip install --upgrade setuptools && \
      pip install --upgrade pip
      pip install elastalert && \
