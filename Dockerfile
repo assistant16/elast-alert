@@ -45,9 +45,9 @@ VOLUME $CONFIG_DIRECTORY
 # Install workaround
 RUN . /opt/app-root/etc/scl_enable && \
      pip install Cython && \
+     pip install elastalert && \
      pip install --upgrade setuptools && \
-     pip install --upgrade pip && \
-     pip install elastalert
+     pip install --upgrade pip
 
 # switch to elastalert
 USER 1000
