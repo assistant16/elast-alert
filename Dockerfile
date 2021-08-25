@@ -1,7 +1,6 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN  pip install neuralpy && \
-     pip install --upgrade setuptools && \
+RUN  pip2 install --upgrade setuptools && \
      pip install --upgrade pip
      pip install elastalert && \
 
