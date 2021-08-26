@@ -1,10 +1,5 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN pip install --upgrade pip==19.3.1
-
-RUN pip install --upgrade setuptools==18.0.1 && \
-    pip install elastalert
-
 MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
 
 ENV ELASTALERT_VERSION 0.1.29
@@ -47,13 +42,13 @@ VOLUME $RULES_DIRECTORY
 
 VOLUME $CONFIG_DIRECTORY
 
+
 # Install workaround
 RUN . /opt/app-root/etc/scl_enable && \
-     pip install Cython && \
-     pip install elastalert && \
-     pip install --upgrade setuptools && \
-     pip install --upgrade pip
-
+     pip install --upgrade pip==19.3.1 && \
+     pip install --upgrade setuptools==20.10.1 && \
+     pip install elastalert
+     
 # switch to elastalert
 USER 1000
 
