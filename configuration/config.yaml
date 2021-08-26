@@ -18,7 +18,7 @@ buffer_time:
 # The elasticsearch hostname for metadata writeback
 # Note that every rule can have it's own elasticsearch host
 # en0 on docker host
-es_host: elasticsearch.openshift-logging.svc.cluster.local
+es_host: elasticsearch.openshift-logging.svc
 
 # The elasticsearch port
 es_port: 9200
