@@ -1,6 +1,6 @@
-FROM hub.docker.com/centos/python-36-centos7
+FROM FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN  . /opt/app-root/etc/scl_enable && \
+RUN . /opt/app-root/etc/scl_enable && \
     pip install --upgrade pip && \
     pip install --upgrade setuptools && \
     pip install elastalert
