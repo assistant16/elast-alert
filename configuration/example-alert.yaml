@@ -12,7 +12,7 @@ filter:
       query: "message: Hello"
 
 #SMT
-smtp_host: '<SMTP_HOST'
+smtp_host: '<SMTP_HOST>'
 smtp_port: 25
 
 from_addr: 'dev@<MAILSERVER>'
