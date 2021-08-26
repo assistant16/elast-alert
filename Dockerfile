@@ -1,8 +1,8 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN pip install --upgrade pip==8.1.2
+RUN pip install --upgrade pip==19.3.1
 
-RUN pip install --upgrade setuptools && \
+RUN pip install --upgrade setuptools==18.0.1 && \
     pip install elastalert
 
 MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
