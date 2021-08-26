@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip==8.1.2
 
 RUN pip install --upgrade setuptools && \
     pip install elastalert
