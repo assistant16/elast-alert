@@ -1,8 +1,8 @@
 FROM registry.access.redhat.com/rhscl/python-27-rhel7
 
-RUN . /opt/app-root/etc/scl_enable && \
-    pip install --upgrade pip && \
-    pip install --upgrade setuptools && \
+RUN pip install --upgrade pip
+
+RUN pip install --upgrade setuptools && \
     pip install elastalert
 
 MAINTAINER Kilian Henneboehle "kilian.henneboehle@mailbox.org"
